@@ -1,0 +1,163 @@
+/* ===============================
+   QUIZ CONSOLE – FINAL THEME
+================================ */
+
+.quiz-console {
+  min-height: 100vh;
+  background: #020617;
+  color: #e5e7eb;
+  font-family: "Inter", system-ui, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===============================
+   HEADER
+================================ */
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 18px;
+
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+.quiz-header h2 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #38bdf8;
+}
+
+.quiz-header span {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* ===============================
+   BODY
+================================ */
+
+.quiz-body {
+  flex: 1;
+  padding: 18px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ===============================
+   QUESTION
+================================ */
+
+.question-box {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.question-box h3 {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* ===============================
+   OPTIONS
+================================ */
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option {
+  padding: 13px 14px;
+  border-radius: 10px;
+
+  background: #020617;
+  border: 1px solid #334155;
+
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.option:hover {
+  background: #0f172a;
+  border-color: #38bdf8;
+}
+
+.option.selected {
+  background: #0f172a;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.5);
+}
+
+/* ===============================
+   CONTROLS (BOTTOM BAR)
+================================ */
+
+.quiz-controls {
+  display: flex;
+  gap: 14px;
+
+  padding: 14px 18px;
+
+  border-top: 1px solid #1e293b;
+  background: #020617;
+}
+
+.quiz-controls button {
+  flex: 1;
+  padding: 12px;
+
+  border-radius: 10px;
+  border: 1px solid #2563eb;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-weight: 600;
+  font-size: 13px;
+
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.quiz-controls button:hover {
+  background: #1d4ed8;
+}
+
+.quiz-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   FINISH BUTTON
+================================ */
+
+.finish-btn {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: #020617;
+}
+
+.finish-btn:hover {
+  background: #20d161;
+}
+.quiz-controls .finish-btn {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: #020617;
+}
+
+.quiz-controls .finish-btn:hover {
+  background: #22c55e;
+}

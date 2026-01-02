@@ -1,0 +1,210 @@
+/* ===============================
+   GLOBAL RESET & FONT
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+}
+
+/* ===============================
+   BODY – DIGITAL TECH BACKGROUND
+================================ */
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, #1e3a8a, transparent 45%),
+    radial-gradient(circle at bottom right, #0ea5e9, transparent 45%),
+    linear-gradient(135deg, #020617, #020617);
+  color: #e5e7eb;
+}
+
+/* ===============================
+   AUTH CONTAINER
+================================ */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ===============================
+   AUTH BOX – GLASS PANEL
+================================ */
+.auth-box {
+  width: 100%;
+  max-width: 420px;
+  padding: 28px;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.65),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* ===============================
+   HEADING
+================================ */
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #e5e7eb;
+}
+
+/* ===============================
+   ERROR MESSAGE
+================================ */
+.error-text {
+  background: rgba(220, 38, 38, 0.15);
+  color: #fecaca;
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+/* ===============================
+   PROFILE UPLOAD (DIGITAL ID)
+================================ */
+.profile-upload {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.profile-upload img,
+.avatar-placeholder {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+  object-fit: cover;
+
+  border: 2px solid #38bdf8;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.45);
+}
+
+.avatar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #0f172a, #020617);
+  color: #38bdf8;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+}
+
+.profile-upload input {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* ===============================
+   INPUT FIELDS – TERMINAL STYLE
+================================ */
+.auth-box input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.28);
+
+  color: #e5e7eb;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.auth-box input::placeholder {
+  color: #94a3b8;
+}
+
+.auth-box input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.45);
+}
+
+/* ===============================
+   PRIMARY BUTTON – TECH ACTION
+================================ */
+.auth-box button {
+  width: 100%;
+  padding: 13px;
+
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  border: none;
+
+  color: #020617;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.auth-box button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.45);
+}
+
+/* ===============================
+   AUTH LINK
+================================ */
+.auth-link {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.auth-link span {
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+.auth-link span:hover {
+  text-decoration: underline;
+}
+/* ===============================
+   PROFILE UPLOAD – PRIMARY BUTTON
+================================ */
+.upload-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 6px;
+
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #020617;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.35);
+}
+
+.upload-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(56, 189, 248, 0.55);
+}

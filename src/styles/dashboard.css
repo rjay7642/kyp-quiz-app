@@ -1,0 +1,232 @@
+/* ===============================
+   DASHBOARD – TECH THEME
+================================ */
+
+.dashboard-container {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, #1e3a8a, transparent 45%),
+    radial-gradient(circle at bottom right, #0ea5e9, transparent 45%),
+    linear-gradient(135deg, #020617, #020617);
+  color: #e5e7eb;
+}
+
+/* ===============================
+   HEADER – GLASS CONSOLE BAR
+================================ */
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dashboard-title h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.dashboard-title span {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* ===============================
+   USER INFO (PROFILE)
+================================ */
+
+.dashboard-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard-user img,
+.dashboard-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 2px solid #38bdf8;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.45);
+}
+
+.dashboard-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #0f172a, #020617);
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.user-meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.user-meta strong {
+  font-size: 13px;
+}
+
+.user-meta small {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+/* ===============================
+   LOGOUT BUTTON
+================================ */
+
+.dashboard-user button {
+  margin-left: 10px;
+  padding: 6px 12px;
+
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+
+  color: #fecaca;
+  font-size: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dashboard-user button:hover {
+  background: rgba(239, 68, 68, 0.3);
+}
+
+/* ===============================
+   CONTENT AREA
+================================ */
+
+.dashboard-content {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* ===============================
+   DASHBOARD CARDS – GLASS
+================================ */
+
+.dashboard-card {
+  padding: 24px;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.dashboard-card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.dashboard-card p {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Disabled subject effect */
+.dashboard-card.disabled {
+  opacity: 0.45;
+  filter: grayscale(1);
+  cursor: not-allowed;
+}
+
+/* Resume highlight */
+.resume-card {
+  border: 2px solid #38bdf8;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.35);
+}
+
+/* Notification bar */
+.dashboard-notice {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 23, 42, 0.95);
+  color: #e5e7eb;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 13px;
+  z-index: 1000;
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* ===============================
+   DASHBOARD HEADER FIX
+================================ */
+
+.dashboard-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 65%;
+}
+
+/* avatar / image fixed */
+.dashboard-user img,
+.dashboard-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* text container */
+.user-meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* VERY IMPORTANT */
+}
+
+/* NAME */
+.user-meta strong {
+  font-size: 14px;
+  max-width: 180px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* CENTRE NAME */
+.user-meta small {
+  font-size: 12px;
+  color: #94a3b8;
+
+  max-width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* LOGOUT BUTTON FIX */
+.dashboard-user button {
+  margin-left: auto;
+  flex-shrink: 0;
+}

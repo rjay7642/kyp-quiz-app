@@ -1,0 +1,218 @@
+/* ===============================
+   RESULT PAGE – GLASS UI
+================================ */
+
+.result-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background:
+    radial-gradient(circle at top left, #1e3a8a, transparent 45%),
+    radial-gradient(circle at bottom right, #0ea5e9, transparent 45%),
+    linear-gradient(135deg, #020617, #020617);
+
+  color: #e5e7eb;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* ===== HEADER ===== */
+.result-header {
+  padding: 22px 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.result-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.result-header span {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* ===== BODY ===== */
+.result-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+/* ===== GLASS BOX ===== */
+.result-box {
+  width: 100%;
+  max-width: 420px;
+
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: 18px;
+  padding: 26px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.55);
+
+  text-align: center;
+}
+
+.result-box h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.result-box p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+/* RESULT COLORS */
+.result-box .correct {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.result-box .wrong {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+/* ===== NOTE ===== */
+.result-note {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+/* ===== ACTIONS ===== */
+.result-actions {
+  margin-top: 26px;
+}
+
+/* ===== BACK BUTTON ===== */
+.back-dashboard-btn {
+  padding: 14px 38px;
+  font-size: 15px;
+  font-weight: 600;
+
+  border-radius: 14px;
+  border: none;
+
+  background: linear-gradient(
+    135deg,
+    #22c55e,
+    #16a34a
+  );
+
+  color: #052e16;
+  cursor: pointer;
+
+  box-shadow:
+    0 14px 34px rgba(34, 197, 94, 0.45);
+
+  transition: all 0.25s ease;
+}
+
+.back-dashboard-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow:
+    0 20px 45px rgba(34, 197, 94, 0.65);
+}
+
+.back-dashboard-btn:active {
+  transform: scale(0.96);
+}
+
+/* ===============================
+   LEADERBOARD – CARD LIST
+================================ */
+
+.leaderboard-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 16px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Rank */
+.lb-rank {
+  font-size: 18px;
+  font-weight: 700;
+  width: 42px;
+  text-align: center;
+  color: #38bdf8;
+}
+
+/* Profile */
+.lb-profile img,
+.lb-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.lb-profile img {
+  object-fit: cover;
+}
+
+.lb-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #020617;
+  font-weight: 700;
+}
+
+/* Info */
+.lb-info {
+  flex: 1;
+}
+
+.lb-info strong {
+  display: block;
+  font-size: 14px;
+}
+
+.lb-info span {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* Score */
+.lb-score {
+  text-align: right;
+}
+
+.lb-marks {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lb-percent {
+  font-size: 12px;
+  color: #22c55e;
+}
