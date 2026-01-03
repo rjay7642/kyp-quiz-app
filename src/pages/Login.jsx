@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/auth.css";
 
@@ -11,6 +11,14 @@ const Login = () => {
   });
 
   const [error, setError] = useState("");
+
+  /* 🔐 AUTO REDIRECT IF ALREADY LOGGED IN */
+  useEffect(() => {
+    const isLoggedIn = localStorage.getItem("kyp_logged_in");
+    if (isLoggedIn === "true") {
+      navigate("/dashboard", { replace: true });
+    }
+  }, [navigate]);
 
   const handleChange = (e) => {
     setFormData({
@@ -37,9 +45,10 @@ const Login = () => {
       return;
     }
 
-    // Login success
+    /* ✅ LOGIN SUCCESS – PERSIST STATE */
     localStorage.setItem("kyp_logged_in", "true");
-    navigate("/dashboard");
+
+    navigate("/dashboard", { replace: true });
   };
 
   return (
@@ -71,7 +80,8 @@ const Login = () => {
         </form>
 
         <p className="auth-link">
-          New user? <span onClick={() => navigate("/register")}>Register</span>
+          New user?{" "}
+          <span onClick={() => navigate("/register")}>Register</span>
         </p>
       </div>
     </div>
