@@ -1,12 +1,12 @@
 const cssQuestions = [
-  
-  
+
   {
     question: "Right decisions at right time may get hampered due to?",
     options: [
       "Emotional attachments",
       "Traditional situations",
-      "Rational thinking process"
+      "Rational thinking process",
+      "None of these"
     ],
     correctIndex: 0
   },
@@ -15,7 +15,8 @@ const cssQuestions = [
     options: [
       "Hiding your liking",
       "Proudly presenting your talents",
-      "Neglecting the questions asked to you"
+      "Neglecting the questions asked to you",
+      "Being silent always"
     ],
     correctIndex: 1
   },
@@ -24,7 +25,8 @@ const cssQuestions = [
     options: [
       "Argument",
       "Communication",
-      "Investigation"
+      "Investigation",
+      "Discussion"
     ],
     correctIndex: 1
   },
@@ -33,7 +35,8 @@ const cssQuestions = [
     options: [
       "In a short life",
       "In a year",
-      "In few minutes"
+      "In few minutes",
+      "In many years"
     ],
     correctIndex: 1
   },
@@ -42,25 +45,28 @@ const cssQuestions = [
     options: [
       "Pessimistic attitude",
       "Optimistic attitude",
-      "Unrealistic attitude"
+      "Realistic attitude",
+      "Positive attitude"
     ],
     correctIndex: 0
   },
   {
-    question: "Collective responsibility of completing a job in a specific time is called?",
+    question: "Collective responsibility of completing a job in time is called?",
     options: [
       "Plan",
       "Vision",
-      "Goal"
+      "Goal",
+      "Mission"
     ],
     correctIndex: 0
   },
   {
-    question: "Ashok speaks well but does not express himself in a group. This means?",
+    question: "Ashok speaks well but cannot express in group. This means?",
     options: [
-      "He needs to think about his problem",
-      "He has overcome his fear",
-      "He needs to work on interpersonal skills and confidence"
+      "He has no problem",
+      "He has overcome fear",
+      "He needs to work on interpersonal skills",
+      "He is perfect"
     ],
     correctIndex: 2
   },
@@ -69,7 +75,8 @@ const cssQuestions = [
     options: [
       "Incapable of appreciating good in others",
       "Capable of appreciating others",
-      "Capable"
+      "Very confident",
+      "Successful"
     ],
     correctIndex: 0
   },
@@ -77,35 +84,39 @@ const cssQuestions = [
     question: "Spending time in planning your day is?",
     options: [
       "A waste of time",
-      "Good as it enables productive use of time",
-      "Not required"
+      "Good for productivity",
+      "Not required",
+      "Useless"
     ],
     correctIndex: 1
   },
   {
-    question: "Crying after feedback on dressing style indicates?",
+    question: "Crying after feedback indicates?",
     options: [
-      "She dislikes the teacher",
-      "She needs to accept feedback positively",
-      "She feels ashamed"
+      "Dislike teacher",
+      "Need to accept feedback positively",
+      "Feeling ashamed",
+      "Anger"
     ],
     correctIndex: 1
   },
   {
-    question: "A team leader who communicates positively and gets work done has?",
+    question: "Positive communication by a team leader shows?",
     options: [
       "Good vision",
       "Good interpersonal skills",
-      "Power to force people"
+      "Authority power",
+      "Strict behavior"
     ],
     correctIndex: 1
   },
   {
-    question: "Preparing a to-do list helps you to?",
+    question: "Preparing a to-do list helps to?",
     options: [
       "Prioritize tasks",
       "Hand over tasks",
-      "Know pending tasks"
+      "Forget tasks",
+      "Delay work"
     ],
     correctIndex: 0
   },
@@ -114,25 +125,28 @@ const cssQuestions = [
     options: [
       "Taking easiest decision",
       "Taking decision at right time",
-      "Selecting appropriate alternative"
+      "Selecting best alternative",
+      "Avoiding decision"
     ],
     correctIndex: 2
   },
   {
-    question: "Taking responsibility for your actions at workplace is called?",
+    question: "Taking responsibility for actions at workplace is?",
     options: [
       "Positive behavior",
       "Responsibility",
-      "Accountability"
+      "Accountability",
+      "Discipline"
     ],
     correctIndex: 2
   },
   {
-    question: "Accepting different views in a presentation shows?",
+    question: "Accepting different views in presentation shows?",
     options: [
-      "Openness for criticism",
-      "Positive attitude and acceptance of feedback",
-      "Politeness"
+      "Openness to criticism",
+      "Positive attitude",
+      "Politeness",
+      "Fear"
     ],
     correctIndex: 1
   },
@@ -141,51 +155,36 @@ const cssQuestions = [
     options: [
       "Preparation",
       "Narration",
-      "Communication"
+      "Communication",
+      "Confidence"
     ],
     correctIndex: 0
   },
   {
-    question: "Imaginary problems give more stress than real ones.",
-    options: [
-      "Disagree",
-      "Agree"
-    ],
-    correctIndex: 1
-  },
-  {
-    question: "To make a better presentation than others, you should?",
-    options: [
-      "Think divergently on the topic",
-      "Follow earlier presentation",
-      "Try to be different"
-    ],
-    correctIndex: 0
-  },
-  {
-    question: "Communicating with someone not present physically uses interpersonal skills.",
+    question: "Imaginary problems cause more stress than real ones.",
     options: [
       "Agree",
-      "Disagree",
-      "Can’t say"
+      "Disagree"
     ],
-    correctIndex: 1
+    correctIndex: 0
   },
   {
     question: "Procrastinating at workplace shows?",
     options: [
       "Lack of motivation",
       "Lack of positive attitude",
-      "Lack of courage"
+      "Lack of courage",
+      "Confidence"
     ],
     correctIndex: 1
   },
   {
     question: "Coming to office on time indicates?",
     options: [
-      "You follow rules individually",
-      "You follow society rules",
-      "You like your office"
+      "You follow rules",
+      "You like office",
+      "You fear boss",
+      "You have free time"
     ],
     correctIndex: 0
   },
@@ -193,106 +192,51 @@ const cssQuestions = [
     question: "Nail biting during problems indicates?",
     options: [
       "Takes stress easily",
-      "Is weak",
-      "Takes everything positively"
+      "Weak personality",
+      "Positive thinking",
+      "Strong confidence"
     ],
     correctIndex: 0
   },
   {
-    question: "Presenting talents in new friend circle is okay because?",
-    options: [
-      "All must accept ideas",
-      "You are allowed to do so",
-      "Everyone does not know your skills"
-    ],
-    correctIndex: 2
-  },
-  {
-    question: "Preparing a checklist shows that?",
+    question: "Preparing a checklist shows?",
     options: [
       "You want to complete tasks on time",
       "You take tension",
-      "You forget tasks"
+      "You forget tasks",
+      "You are careless"
     ],
     correctIndex: 0
   },
   {
     question: "Delaying planned action indicates?",
     options: [
-      "Dislike activities",
-      "Lack of energy",
-      "Procrastination"
+      "Dislike work",
+      "No energy",
+      "Procrastination",
+      "Confidence"
     ],
     correctIndex: 2
   },
   {
-    question: "Not trying to please everyone indicates?",
+    question: "Not trying to please everyone shows?",
     options: [
       "Knowing your limits",
       "Knowing abilities",
-      "Knowing stress"
+      "Stress",
+      "Anger"
     ],
     correctIndex: 0
   },
   {
-    question: "A group leader should complete task by?",
+    question: "Flexible but firm participation in group discussion means?",
     options: [
-      "Giving idea and waiting",
-      "Warning about failure",
-      "Making team listen to each other"
-    ],
-    correctIndex: 2
-  },
-  {
-    question: "In group discussion, be flexible but?",
-    options: [
-      "Do not speak",
-      "Put forth your views",
-      "Do not think"
-    ],
-    correctIndex: 1
-  },
-  {
-    question: "After assigning priorities, what should you do?",
-    options: [
-      "Delegate responsibility",
-      "Start activity",
-      "Allocate time to each task"
-    ],
-    correctIndex: 2
-  },
-  {
-    question: "Example of sensitive and responsible citizen is?",
-    options: [
-      "Asking conductor for seat",
-      "Everyone looks for seat",
-      "Boy offers seat to lady with baby"
-    ],
-    correctIndex: 2
-  },
-  {
-    question: "Accepting different views in presentation shows?",
-    options: [
-      "Openness for criticism",
-      "Positive attitude and feedback acceptance",
-      "Politeness"
-    ],
-    correctIndex: 1
-  },
-  {
-    question: "Calling friends frequently during office hours indicates?",
-    options: [
-      "Likes phone calls",
-      "Misusing company time"
-    ],
-    correctIndex: 1
-  },
-  {
-    question: "Ignoring dam warning signs, what should you do?",
-    options: [
-      "Go and swim",
-      "Stop friends from swimming"
+      "Stay silent",
+      "Put forward your views",
+      "Ignore discussion",
+      "Avoid speaking"
     ],
     correctIndex: 1
   }
-]
+];
+export default cssQuestions;

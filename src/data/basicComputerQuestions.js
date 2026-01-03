@@ -900,4 +900,4 @@ const basicComputerQuestions = [
     correctIndex: 0
   }
 ];
-
+export default basicComputerQuestions;

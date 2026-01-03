@@ -1,7 +1,10 @@
 const clsQuestions = [
   {
     question: "Which is the correct sentence?",
-    options: ["Rohan never fails", "Rohan fails never"],
+    options: [
+      "Rohan never fails",
+      "Rohan fails never"
+    ],
     correctIndex: 0
   },
   {
@@ -46,8 +49,8 @@ const clsQuestions = [
     question: "But I want to be a professional dancer and make a big name.",
     options: [
       "पर मुझे व्यावसायिक नर्तकी / नर्तक बनना था और बड़ा नाम कमाना था।",
-      "पर मुझे व्यावसायिक नर्तकी / नर्तक नहीं बनना है और ना ही बड़ा नाम कमाना है।",
-      "पर मुझे व्यावसायिक नर्तकी / नर्तक कब बनना है और कहाँ बड़ा नाम कमाना है।",
+      "पर मुझे व्यावसायिक नर्तकी / नर्तक नहीं बनना है।",
+      "पर मुझे व्यावसायिक नर्तकी / नर्तक कब बनना है।",
       "पर मुझे व्यावसायिक नर्तकी / नर्तक बनना है और बड़ा नाम कमाना है।"
     ],
     correctIndex: 3
@@ -77,8 +80,8 @@ const clsQuestions = [
     options: [
       "You are such a good friend Reena, you always say the right thing.",
       "You were such a good friend Reena, you always said the right thing.",
-      "You are such a good right friend Reena, you always say the thing.",
-      "You are such a good friend Reena, you will be always saying the right thing."
+      "You are such a good right friend Reena.",
+      "You will always be saying the right thing."
     ],
     correctIndex: 0
   },
@@ -91,8 +94,8 @@ const clsQuestions = [
     question: "Some books are called magazines and they are published at regular intervals of time.",
     options: [
       "कुछ पुस्तकों को आवधिक पत्र कहा जाता है और वे कभी-कभी प्रकाशित होते हैं।",
-      "कुछ पुस्तकों को विज्ञान पत्र कहा जाता है और वे नियमित अवधि में प्रकाशित होते हैं।",
-      "कुछ पुस्तकों को आवधिक पत्र कहा जाता है और वे नियमित अवधि में प्रकाशित नहीं होते हैं।",
+      "कुछ पुस्तकों को विज्ञान पत्र कहा जाता है।",
+      "कुछ पुस्तकों को आवधिक पत्र कहा जाता है और वे नियमित अवधि में प्रकाशित नहीं होते।",
       "कुछ पुस्तकों को पत्रिका कहा जाता है और वे नियमित अवधि में प्रकाशित होती हैं।"
     ],
     correctIndex: 3
@@ -101,11 +104,6 @@ const clsQuestions = [
     question: "Ann ______ to work for this company.",
     options: ["Would like", "Likes"],
     correctIndex: 0
-  },
-  {
-    question: "Mr. Saha is the _______ man today because he won the lottery.",
-    options: ["More happy", "Happiest", "Happy"],
-    correctIndex: 1
   },
   {
     question: "He said he might ______ for Delhi on Saturday.",
@@ -128,14 +126,88 @@ const clsQuestions = [
     correctIndex: 2
   },
   {
-    question: "___________ is my mobile and that is yours on the shelf over there.",
-    options: ["This", "These"],
+    question: "Where _____ they go yesterday?",
+    options: ["Does", "Did", "Do"],
+    correctIndex: 1
+  },
+  {
+    question: "A sparrow lives in a nest.",
+    options: [
+      "A sparrow lives in a nest.",
+      "A sparrow lived in a nest.",
+      "Sparrows live in a nest.",
+      "A sparrow living in a nest."
+    ],
     correctIndex: 0
   },
   {
-    question: "______ night the factory was closed so he came home.",
-    options: ["That", "Those", "These"],
+    question: "What __________ you do every Sunday?",
+    options: ["Does", "Did", "Do"],
+    correctIndex: 2
+  },
+  {
+    question: "I _____ fruit juice very much.",
+    options: ["Like", "Liked", "Liking"],
     correctIndex: 0
+  },
+  {
+    question: "My mother ____ a new dress to go to grandma’s birthday.",
+    options: ["Likes", "Would like"],
+    correctIndex: 1
+  },
+  {
+    question: "Mohan is not such a _______ student.",
+    options: ["Better", "Bad", "More bad"],
+    correctIndex: 1
+  },
+  {
+    question: "My friend Amita ____________ sports.",
+    options: ["loves", "loves", "love"],
+    correctIndex: 0
+  },
+  {
+    question: "Don’t ______ football in the yard.",
+    options: ["Play", "Plays", "Played"],
+    correctIndex: 0
+  },
+  {
+    question: "He is _______ player in the team.",
+    options: ["Best", "The best", "More Best"],
+    correctIndex: 1
+  },
+  {
+    question: "A kettle is on the table.",
+    options: [
+      "A kettle is on the table.",
+      "A kettle is in the table.",
+      "A table is on the kettle.",
+      "A kettle is of the table."
+    ],
+    correctIndex: 0
+  },
+  {
+    question: "Fill in the blanks: ____ your homework.",
+    options: ["Do", "Doing", "Does"],
+    correctIndex: 0
+  },
+  {
+    question: "They ____ help you.",
+    options: ["Was", "Will", "Want"],
+    correctIndex: 1
+  },
+  {
+    question: "She has never ______ something like that before.",
+    options: ["Done", "Doing", "Did"],
+    correctIndex: 0
+  },
+  {
+    question: "How often should you reschedule meetings?",
+    options: [
+      "Very often as you should respect only your time",
+      "Rarely as you should respect other’s time too",
+      "Never as you should stick to your schedule"
+    ],
+    correctIndex: 1
   },
   {
     question: "इसलिए हमें कल दोपहर के बाद कुछ बारिश दिखने की संभावना है।",
@@ -461,6 +533,4 @@ const clsQuestions = [
     correctIndex: 1
   }
 ];
-
-
-
+export default clsQuestions;
