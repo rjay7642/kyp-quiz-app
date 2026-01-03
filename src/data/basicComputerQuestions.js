@@ -1,4 +1,4 @@
-const basicComputer_part2 = [
+const basicComputerQuestions = [
   {
     question: "Computer ko chalane ke liye kaun sa software sabse jaruri hota hai?",
     options: [

@@ -1,4 +1,4 @@
-const clsQuestions_part1 = [
+const clsQuestions = [
   {
     question: "Which is the correct sentence?",
     options: ["Rohan never fails", "Rohan fails never"],
