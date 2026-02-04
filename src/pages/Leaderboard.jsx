@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { supabase } from "../supabaseClient";
+import Navbar from "../components/Navbar";
 import "../styles/leaderboard.css";
 
 const Leaderboard = () => {
@@ -54,9 +55,9 @@ const Leaderboard = () => {
   }, []);
 
   const getRankBadge = (rank) => {
-    if (rank === 1) return "🥇";
-    if (rank === 2) return "🥈";
-    if (rank === 3) return "🥉";
+    if (rank === 1) return "1st";
+    if (rank === 2) return "2nd";
+    if (rank === 3) return "3rd";
     return `#${rank}`;
   };
 
@@ -64,14 +65,14 @@ const Leaderboard = () => {
     <div className="leaderboard-container">
       <header className="leaderboard-header">
         <h2>Daily Leaderboard</h2>
-        <span>Basic Computer • Today</span>
+        <span>Basic Computer - Today</span>
       </header>
 
       {myStats && (
         <div className="my-stats">
           <strong>Your Rank: #{myStats.rank}</strong>
           <p>
-            You are ahead of{" "}
+            You are ahead of {" "}
             <span>{myStats.aheadOf}</span>{" "}
             out of {myStats.total} students
           </p>
@@ -114,7 +115,7 @@ const Leaderboard = () => {
                 <small>
                   {u.centre}
                   {isMe && localUser?.district
-                    ? ` • ${localUser.district}`
+                    ? ` - ${localUser.district}`
                     : ""}
                 </small>
               </div>
@@ -124,6 +125,8 @@ const Leaderboard = () => {
           );
         })}
       </div>
+
+      <Navbar />
     </div>
   );
 };

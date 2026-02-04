@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import cssQuestions from "../data/cssQuestions";
 import basicComputerQuestions from "../data/basicComputerQuestions";
 import { supabase } from "../supabaseClient";
+import Navbar from "../components/Navbar";
 import "../styles/result.css";
 
 const Result = () => {
@@ -16,7 +17,7 @@ const Result = () => {
       return;
     }
 
-    const { type, answers } = stored;
+    const { type, answers, attemptId } = stored;
 
     const questions =
       type === "css"
@@ -40,10 +41,39 @@ const Result = () => {
     const wrong = attempted - correct;
     const score = correct;
     const total = questions.length;
+    const today = new Date().toISOString().split("T")[0];
+
+    /* ===== HISTORY (ALL QUIZZES) ===== */
+    const history =
+      JSON.parse(localStorage.getItem("kyp_attempt_history")) || [];
+
+    const safeAttemptId =
+      attemptId || `${type}-${today}-${Date.now()}`;
+
+    const alreadySaved = history.some(
+      (h) => h.attemptId === safeAttemptId
+    );
+
+    if (!alreadySaved) {
+      history.push({
+        attemptId: safeAttemptId,
+        type,
+        score,
+        total,
+        attempted,
+        correct,
+        date: today,
+        createdAt: new Date().toISOString()
+      });
+    }
+
+    localStorage.setItem(
+      "kyp_attempt_history",
+      JSON.stringify(history)
+    );
 
     /* ================= BASIC DAILY LOGIC ================= */
     if (type === "basic") {
-      const today = new Date().toISOString().split("T")[0];
       const user = JSON.parse(localStorage.getItem("kyp_user"));
       const userId = localStorage.getItem("kyp_user_id");
 
@@ -129,6 +159,8 @@ const Result = () => {
           </button>
         </div>
       </main>
+
+      <Navbar />
     </div>
   );
 };

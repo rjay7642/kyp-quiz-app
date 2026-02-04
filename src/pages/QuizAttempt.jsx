@@ -99,7 +99,8 @@ const QuizAttempt = () => {
       "kyp_last_attempt",
       JSON.stringify({
         type,
-        answers
+        answers,
+        attemptId: new Date().toISOString()
       })
     );
 
@@ -128,9 +129,7 @@ const QuizAttempt = () => {
           </span>
         </div>
 
-        <div className="quiz-timer">
-          ⏱ {formatTime(timeLeft)}
-        </div>
+        <div className="quiz-timer">Time: {formatTime(timeLeft)}</div>
       </header>
 
       {/* ===== QUESTION ===== */}

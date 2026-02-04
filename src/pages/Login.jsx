@@ -12,7 +12,7 @@ const Login = () => {
 
   const [error, setError] = useState("");
 
-  /* 🔐 AUTO REDIRECT IF ALREADY LOGGED IN */
+  /* AUTO REDIRECT IF ALREADY LOGGED IN */
   useEffect(() => {
     const isLoggedIn = localStorage.getItem("kyp_logged_in");
     if (isLoggedIn === "true") {
@@ -45,7 +45,7 @@ const Login = () => {
       return;
     }
 
-    /* ✅ LOGIN SUCCESS – PERSIST STATE */
+    /* LOGIN SUCCESS - PERSIST STATE */
     localStorage.setItem("kyp_logged_in", "true");
 
     navigate("/dashboard", { replace: true });
